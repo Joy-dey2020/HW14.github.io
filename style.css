@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ .one img{
+    clip-path:circle(30% at 50% 50%);
+   
+    
+}
+.two img{
+     clip-path: ellipse(50% 40% at 50% 50%);
+}
+.three img{ background-color: red;
+    clip-path: inset( 30% 20% 15% 40%);
+}
+.four img{
+    clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.five img{
+    float: left;
+    clip-path: circle(30% at 50% 50%);
+    shape-outside: circle(30% at 50% 50%);
+}
+.six img{
+    filter: blur(2px);
+    filter: brightness(130%);
+    filter: contrast(130%);
+    filter: drop-shadow(8px 5px 7px blue);
+    filter: grayscale(150px);
+    filter: hue-rotate(100deg);
+    filter: invert(100%);
+    filter: opacity(100%);
+    filter: saturate(150%);
+    filter: sepia(120%);
+    filter: none;
+    filter: blur(55px) contrast(120%) drop-shadow(50px);
+}
+.seven{
+    margin: auto;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    background:;
+    transition-property: width,heigth;
+    transition-duration: 5s,10s, 7s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-timing-function: steps(4);
+    transition: all 3s linear 1s;
+}
+
+.seven:hover{
+    background-color: red;
+    width: 250px;
+     height: 250px;
+}
